@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="744.0" style="-fx-background-color: #fffaed;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifierAvis">
+    <children>
+        <Label layoutX="26.0" layoutY="354.0" text="Commentaire:" />
+        <TextField fx:id="commAPField" layoutX="117.0" layoutY="350.0" prefHeight="25.0" prefWidth="400.0" style="-fx-background-color: #E8E4CE;" />
+        <Label layoutX="37.0" layoutY="297.0" text="20.00 DT">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font></Label>
+        <TextField fx:id="starField" layoutX="148.0" layoutY="381.0" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #E8E4CE;" />
+        <CheckBox fx:id="favCheckBox" layoutX="148.0" layoutY="415.0" text="Favorite" />
+        <Button layoutX="341.0" layoutY="470.0" mnemonicParsing="false" onAction="#modifierAvis" style="-fx-background-color: #db1f48;" text="Modifier" textFill="WHITE" />
+        <Button layoutX="563.0" layoutY="470.0" mnemonicParsing="false" onAction="#supprimerAvis" style="-fx-background-color: #db1f48;" text="Supprimer" textFill="WHITE" />
+        <Button layoutX="58.0" layoutY="470.0" onAction="#goBack" prefHeight="26.0" prefWidth="89.0" style="-fx-background-color: #db1f48;" text="&lt;&lt;Back" textFill="WHITE" />
+      <AnchorPane layoutX="-7.0" layoutY="2.0" prefHeight="62.0" prefWidth="754.0">
+         <children>
+            <AnchorPane layoutX="68.0" layoutY="-36.0" prefHeight="144.0" prefWidth="378.0">
+               <children>
+                  <ImageView fitHeight="92.0" fitWidth="744.0" layoutX="-61.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@./image/en téte2.PNG" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="151.0" fitWidth="203.0" layoutX="-1.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@./image/prez avec poulet panné et legume.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="258.0" layoutY="297.0" text="10.00 DT">
+         <font>
+            <Font name="Arial Black" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="558.0" layoutY="297.0" text="15.00 DT">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="151.0" fitWidth="226.0" layoutX="203.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@./image/poulet avec legume.PNG" />
+         </image>
+      </ImageView>
+        <ImageView fitHeight="173.0" fitWidth="282.0" layoutX="458.0" layoutY="128.0">
+            <image>
+                <Image url="@./image/poulet panné.PNG" />
+            </image>
+        </ImageView>
+      <Label layoutX="49.0" layoutY="385.0" text="Star rate:" />
+      <Label layoutX="238.0" layoutY="119.0" text="Poulet panne avec legume">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="119.0" text="prez avec poulet panné et legume">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
