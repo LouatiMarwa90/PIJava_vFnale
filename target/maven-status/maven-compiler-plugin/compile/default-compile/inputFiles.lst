@@ -1,9 +1,17 @@
-C:\Users\Malek.Benkacem\Desktop\Alhamdulillah JAVA\src\main\java\controllers\AjouterUtulisateur.java
-C:\Users\Malek.Benkacem\Desktop\Alhamdulillah JAVA\src\main\java\Services\AbonnementService.java
-C:\Users\Malek.Benkacem\Desktop\Alhamdulillah JAVA\src\main\java\entites\Utilisateur.java
-C:\Users\Malek.Benkacem\Desktop\Alhamdulillah JAVA\src\main\java\package-info.java
-C:\Users\Malek.Benkacem\Desktop\Alhamdulillah JAVA\src\main\java\Services\UtilisateurService.java
-C:\Users\Malek.Benkacem\Desktop\Alhamdulillah JAVA\src\main\java\org\example\Main.java
-C:\Users\Malek.Benkacem\Desktop\Alhamdulillah JAVA\src\main\java\test\MainFx.java
-C:\Users\Malek.Benkacem\Desktop\Alhamdulillah JAVA\src\main\java\entites\Abonnement.java
-C:\Users\Malek.Benkacem\Desktop\Alhamdulillah JAVA\src\main\java\util\DataSource.java
+E:\sport\BD\Ghaziv3\wetransfer_sallesport_2024-07-04_2124\sallesport\src\main\java\controllers\home.java
+E:\sport\BD\Ghaziv3\wetransfer_sallesport_2024-07-04_2124\sallesport\src\main\java\controllers\user\ModifierAvisEquipement.java
+E:\sport\BD\Ghaziv3\wetransfer_sallesport_2024-07-04_2124\sallesport\src\main\java\services\EquipmentService.java
+E:\sport\BD\Ghaziv3\wetransfer_sallesport_2024-07-04_2124\sallesport\src\main\java\entities\AvisEquipement.java
+E:\sport\BD\Ghaziv3\wetransfer_sallesport_2024-07-04_2124\sallesport\src\main\java\tests\MainFx.java
+E:\sport\BD\Ghaziv3\wetransfer_sallesport_2024-07-04_2124\sallesport\src\main\java\entities\Equipment.java
+E:\sport\BD\Ghaziv3\wetransfer_sallesport_2024-07-04_2124\sallesport\src\main\java\controllers\admin\AfficherEquipement.java
+E:\sport\BD\Ghaziv3\wetransfer_sallesport_2024-07-04_2124\sallesport\src\main\java\controllers\admin\AjouterEquipement.java
+E:\sport\BD\Ghaziv3\wetransfer_sallesport_2024-07-04_2124\sallesport\src\main\java\services\IRService.java
+E:\sport\BD\Ghaziv3\wetransfer_sallesport_2024-07-04_2124\sallesport\src\main\java\controllers\admin\ModifierEquipement.java
+E:\sport\BD\Ghaziv3\wetransfer_sallesport_2024-07-04_2124\sallesport\src\main\java\controllers\user\AjoutAvisEquipement.java
+E:\sport\BD\Ghaziv3\wetransfer_sallesport_2024-07-04_2124\sallesport\src\main\java\controllers\Dashboard.java
+E:\sport\BD\Ghaziv3\wetransfer_sallesport_2024-07-04_2124\sallesport\src\main\java\util\DataSource.java
+E:\sport\BD\Ghaziv3\wetransfer_sallesport_2024-07-04_2124\sallesport\src\main\java\controllers\user\AfficheAvisEquipement.java
+E:\sport\BD\Ghaziv3\wetransfer_sallesport_2024-07-04_2124\sallesport\src\main\java\services\AvisEquipementService.java
+E:\sport\BD\Ghaziv3\wetransfer_sallesport_2024-07-04_2124\sallesport\src\main\java\entities\EquipmentCategory.java
+E:\sport\BD\Ghaziv3\wetransfer_sallesport_2024-07-04_2124\sallesport\src\main\java\org\example\Main.java

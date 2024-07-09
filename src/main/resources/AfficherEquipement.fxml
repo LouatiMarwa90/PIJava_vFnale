@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.admin.AfficherEquipement">
+   <children>
+      <AnchorPane layoutX="9.0" layoutY="23.0" prefHeight="558.0" prefWidth="837.0">
+         <children>
+            <HBox layoutX="34.0" layoutY="144.0" prefHeight="250.0" prefWidth="714.0">
+               <children>
+                  <VBox prefHeight="255.0" prefWidth="750.0" styleClass="chosen-fruit-card" stylesheets="@styleadd.css">
+                     <children>
+                        <ListView fx:id="listview" prefHeight="266.0" prefWidth="720.0" stylesheets="@styleadd.css">
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </ListView>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox layoutX="260.0" layoutY="462.0" prefHeight="100.0" prefWidth="306.0">
+               <children>
+                  <VBox prefHeight="100.0" prefWidth="110.0">
+                     <children>
+                        <Button fx:id="ajouter" alignment="CENTER" mnemonicParsing="false" onAction="#add" prefHeight="58.0" prefWidth="105.0" stylesheets="@styleadd.css" text="Ajouter" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="search-button" />
+                              <String fx:value="right-bar" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="100.0" prefWidth="111.0">
+                     <children>
+                        <Button fx:id="modifier" mnemonicParsing="false" onAction="#update" prefHeight="58.0" prefWidth="99.0" stylesheets="@styleadd.css" text="Modifier" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="search-box" />
+                              <String fx:value="right-bar" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="101.0" prefWidth="121.0">
+                     <children>
+                        <Button fx:id="supprimer" mnemonicParsing="false" onAction="#delete" prefHeight="58.0" prefWidth="112.0" stylesheets="@styleadd.css" text="Supprimer" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="search-button" />
+                              <String fx:value="right-bar" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <TextField fx:id="searchfx" layoutX="279.0" layoutY="105.0" prefHeight="27.0" prefWidth="194.0" promptText="Search" stylesheets="@styleadd.css">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+            <VBox layoutX="99.0" layoutY="14.0" prefHeight="67.0" prefWidth="653.0" styleClass="chosen-fruit-card" stylesheets="@styleadd.css">
+               <children>
+                  <Label alignment="TOP_RIGHT" prefHeight="27.0" prefWidth="286.0" text="La liste de tous les equipements" textFill="#fffcfc" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Cambria Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </opaqueInsets>
+            </VBox>
+            <ImageView fitHeight="100.0" fitWidth="88.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@go_fit.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="tri" layoutX="492.0" layoutY="103.0" mnemonicParsing="false" onAction="#faireTri" prefHeight="31.0" prefWidth="61.0" styleClass="search-box" stylesheets="@styleadd.css" text="Tri ">
+               <font>
+                  <Font name="Cambria Bold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

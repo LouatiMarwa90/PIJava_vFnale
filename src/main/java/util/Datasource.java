@@ -1,35 +1,35 @@
 package util;
 
 import java.sql.Connection;
+import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DataSource {
+
+    private Connection connexion;
+    private String url="jdbc:mysql://localhost:3306/salle_de_sport";
+    private String login="root";
+    private String pwd="";
+
     private static DataSource instance;
-    private final Connection connection;
 
-    private DataSource() {
+    private DataSource(){
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver"); // Explicitly load the driver
-            String url = "jdbc:mysql://localhost:3306/pijava";
-            String username = "root"; // replace with your MySQL username
-            String password = ""; // replace with your MySQL password
-            this.connection = DriverManager.getConnection(url, username, password);
-        } catch (ClassNotFoundException e) {
-            throw new RuntimeException("MySQL JDBC Driver not found", e);
+            connexion= DriverManager.getConnection(url,login,pwd);
+            System.out.println("Connexion etablie");
         } catch (SQLException e) {
-            throw new RuntimeException("Connection to the database failed", e);
+            throw new RuntimeException(e);
         }
-    }
-
-    public static DataSource getInstance() {
-        if (instance == null) {
-            instance = new DataSource();
-        }
-        return instance;
     }
 
     public Connection getConnexion() {
-        return connection;
+        return connexion;
+    }
+
+    public static DataSource getInstance(){
+        if(instance==null)
+            instance=new DataSource();
+        return instance;
     }
 }
