@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="810.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Pannier">
+   <children>
+      <AnchorPane layoutX="162.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" />
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox alignment="CENTER" prefHeight="797.0" prefWidth="435.0" style="-fx-background-color: #D3D3D3;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="74.0" prefWidth="435.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="32.0" prefWidth="127.0" text="PLAT" textAlignment="CENTER" textFill="#878787">
+                           <font>
+                              <Font name="Cambria Bold" size="39.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </VBox.margin>
+                     <children>
+                        <TextField alignment="CENTER" prefHeight="40.0" prefWidth="245.0" promptText="Type to search">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </TextField>
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #000000;" text="Search" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <VBox fx:id="choixplat" alignment="CENTER" prefHeight="535.0" prefWidth="100.0" style="-fx-background-color: #D3D3D3;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="50.0" right="50.0" />
+                     </padding>
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="NomP" prefHeight="38.0" prefWidth="198.0" text="Poulet pane">
+                                 <font>
+                                    <Font name="Cambria Bold Italic" size="36.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="PrixP" prefHeight="50.0" prefWidth="138.0" text="20.00DT">
+                                 <font>
+                                    <Font name="Cambria Bold Italic" size="36.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <ImageView fx:id="ImgSrc" fitHeight="170.0" fitWidth="290.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/poulet panné.PNG" />
+                           </image>
+                        </ImageView>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="53.0" prefWidth="334.0">
+                           <children>
+                              <Label prefHeight="48.0" prefWidth="123.0" text="Quantite">
+                                 <font>
+                                    <Font name="Cambria Bold Italic" size="24.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox prefWidth="130.0" promptText="1" />
+                           </children>
+                        </HBox>
+                        <Button fx:id="sortButton6" mnemonicParsing="false" onAction="#achat" prefHeight="50.0" prefWidth="270.0" style="-fx-background-color: #db1f48;" text="ACHAT" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="20.0" top="30.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Cambria Bold Italic" size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <Button fx:id="sortButton66" mnemonicParsing="false" onAction="#supprimer" prefHeight="50.0" prefWidth="270.0" style="-fx-background-color: #db1f48;" text="SUPPRIMER" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="20.0" top="30.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="76.0" prefWidth="880.0">
+                     <children>
+                        <Pane prefHeight="101.0" prefWidth="880.0">
+                           <children>
+                              <Label layoutX="317.0" layoutY="23.0" prefHeight="31.0" prefWidth="109.0" text="PANNIER">
+                                 <font>
+                                    <Font name="Cambria Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="76.0" fitWidth="154.0" layoutX="400.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../image/panier.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <ScrollPane fx:id="scroll" prefHeight="570.0" prefWidth="856.0" stylesheets="@../css/style.css">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="4.0" prefWidth="0.0">
+                           <children>
+                              <GridPane fx:id="grid" layoutY="-1.0" prefHeight="6.0" prefWidth="4.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints />
+                                 </columnConstraints>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
