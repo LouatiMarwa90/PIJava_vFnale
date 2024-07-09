@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main_form" prefHeight="590.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Rec">
+   <children>
+      <BorderPane layoutX="36.0" prefHeight="600.0" prefWidth="1103.0" styleClass="semi-top-form" stylesheets="@dashboardDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="-36.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane stylesheets="@dashboardDesign.css" BorderPane.alignment="CENTER">
+               <styleClass>
+                  <String fx:value="white-bg" />
+                  <String fx:value="shadow" />
+               </styleClass>
+               <children>
+                  <AnchorPane fx:id="addRec_form" layoutX="58.0" layoutY="32.0" prefHeight="633.0" prefWidth="1043.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="89.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane layoutX="23.0" layoutY="14.0" prefHeight="528.0" prefWidth="957.0" stylesheets="@dashboardDesign.css" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <children>
+                              <AnchorPane fx:id="ajform" layoutX="475.0" layoutY="29.0" prefHeight="454.0" prefWidth="462.0" style="-fx-background-color: #FFFFFF;">
+                                 <children>
+                                    <TextArea fx:id="rec" layoutX="63.0" layoutY="132.0" prefHeight="142.0" prefWidth="364.0" promptText="Ecrivez votre reclamation ! " />
+                                    <ChoiceBox fx:id="cat" accessibleText=" " layoutX="65.0" layoutY="327.0" prefHeight="25.0" prefWidth="363.0" />
+                                    <Button fx:id="AjouterRec" layoutX="149.0" layoutY="398.0" mnemonicParsing="false" onAction="#handleAddReclamation" prefHeight="33.0" prefWidth="192.0" style="-fx-background-color: #3BBFBF;" text="Ajouter" />
+                                    <Label layoutX="6.0" layoutY="26.0" prefHeight="34.0" prefWidth="462.0" text="Bienvenue dans notre service reclamation">
+                                       <font>
+                                          <Font name="Bodoni MT Bold" size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="statusLabel" layoutX="65.0" layoutY="370.0" prefHeight="25.0" prefWidth="363.0" textFill="red" />
+                                 </children>
+                              </AnchorPane>
+                              <ImageView fitHeight="535.0" fitWidth="464.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/bg4.PNG" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <AnchorPane prefHeight="45.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="24.0" layoutY="-77.0" prefHeight="35.0" prefWidth="1100.0" styleClass="top-form" stylesheets="@dashboardDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="close" layoutX="943.0" layoutY="8.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" styleClass="minimize" stylesheets="@dashboardDesign.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0" />
+                        <Button fx:id="minimize" layoutX="979.0" layoutY="2.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="41.0" styleClass="minimize" stylesheets="@dashboardDesign.css" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="542.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
