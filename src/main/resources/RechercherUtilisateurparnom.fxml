@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fffaed;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RechercherUtilisateurparnom">
+   <children>
+      <Label layoutX="41.0" layoutY="93.0" prefHeight="18.0" prefWidth="101.0" text="Nom Utulisateur" />
+      <TextField fx:id="IDutulisateurintrf" layoutX="208.0" layoutY="90.0" />
+      <Button layoutX="283.0" layoutY="260.0" mnemonicParsing="false" onAction="#searchuser" style="-fx-background-color: #004369;" text="Rechercher" textFill="WHITE" />
+      <AnchorPane prefHeight="62.0" prefWidth="600.0" style="-fx-background-color: #004369;">
+         <children>
+            <Label layoutX="157.0" layoutY="17.0" text="RECHERCHER UTILISATEUR PAR NOM" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="62.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../java/images/gofitpro.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
