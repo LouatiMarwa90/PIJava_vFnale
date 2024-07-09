@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ModifierUtilisateur">
+   <children>
+      <Label layoutX="26.0" layoutY="27.0" prefHeight="18.0" prefWidth="89.0" text="ID utulisateur" />
+      <Label layoutX="25.0" layoutY="67.0" prefHeight="18.0" prefWidth="90.0" text="Nouveau nom" />
+      <Label layoutX="24.0" layoutY="106.0" text="Nouveau prenom" />
+      <Label layoutX="24.0" layoutY="141.0" prefHeight="18.0" prefWidth="120.0" text="Nouveau mdp" />
+      <Label layoutX="25.0" layoutY="181.0" prefHeight="18.0" prefWidth="90.0" text="Nouveau mail" />
+      <Label layoutX="30.0" layoutY="234.0" prefHeight="18.0" prefWidth="72.0" text="Nouveau tel" />
+      <Label layoutX="30.0" layoutY="274.0" text="Nouveau statut" />
+      <Label layoutX="15.0" layoutY="320.0" prefHeight="18.0" prefWidth="133.0" text="Nouvelle datenaissance" />
+      <TextField fx:id="txtidm" layoutX="183.0" layoutY="24.0" />
+      <TextField fx:id="txtnvnom" layoutX="184.0" layoutY="64.0" />
+      <TextField fx:id="txtnvprenom" layoutX="184.0" layoutY="102.0" />
+      <TextField fx:id="txtnvmdp" layoutX="184.0" layoutY="138.0" />
+      <TextField fx:id="txtnvmail" layoutX="184.0" layoutY="178.0" />
+      <TextField fx:id="txtnvtel" layoutX="184.0" layoutY="231.0" />
+      <TextField fx:id="txtnvstatut" layoutX="185.0" layoutY="279.0" />
+      <TextField fx:id="txtnvdate" layoutX="184.0" layoutY="317.0" />
+      <Button layoutX="444.0" layoutY="317.0" mnemonicParsing="false" onAction="#modifuser" text="Modifier" />
+   </children>
+</AnchorPane>

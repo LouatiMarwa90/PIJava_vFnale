@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AjouterAbonnement">
+   <children>
+      <Label layoutX="39.0" layoutY="39.0" prefHeight="18.0" prefWidth="121.0" text="Montant abonnement" />
+      <Label layoutX="36.0" layoutY="83.0" prefHeight="18.0" prefWidth="122.0" text="Date Expiration" />
+      <Label layoutX="42.0" layoutY="139.0" prefHeight="18.0" prefWidth="102.0" text="Code " />
+      <Label layoutX="31.0" layoutY="237.0" prefHeight="18.0" prefWidth="102.0" text="ID utulisateur" />
+      <TextField fx:id="txtmontant" layoutX="226.0" layoutY="36.0" prefHeight="26.0" prefWidth="194.0" />
+      <TextField fx:id="txtdateexp" layoutX="226.0" layoutY="80.0" prefHeight="26.0" prefWidth="194.0" />
+      <TextField fx:id="txtcode" layoutX="226.0" layoutY="136.0" prefHeight="26.0" prefWidth="194.0" />
+      <TextField fx:id="txtiduab" layoutX="232.0" layoutY="234.0" prefHeight="26.0" prefWidth="188.0" />
+      <Button layoutX="334.0" layoutY="318.0" mnemonicParsing="false" onAction="#addsubscription" text="Ajouter Abonnement" />
+      <Label layoutX="32.0" layoutY="193.0" prefHeight="18.0" prefWidth="110.0" text="TypeAbonnement" />
+      <TextField fx:id="txttypeab" layoutX="248.0" layoutY="187.0" />
+   </children>
+</AnchorPane>

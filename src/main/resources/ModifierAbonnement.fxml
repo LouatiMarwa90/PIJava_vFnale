@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ModifierAbonnement">
+   <children>
+      <Label layoutX="57.0" layoutY="31.0" prefHeight="18.0" prefWidth="92.0" text="ID abonnement" />
+      <Label layoutX="55.0" layoutY="67.0" prefHeight="18.0" prefWidth="107.0" text="Nouveau montant" />
+      <Label layoutX="46.0" layoutY="111.0" prefHeight="18.0" prefWidth="140.0" text="Nouvelle date expiration" />
+      <Label layoutX="43.0" layoutY="157.0" prefHeight="18.0" prefWidth="114.0" text="Nouveau codepromo" />
+      <Label layoutX="42.0" layoutY="200.0" prefHeight="18.0" prefWidth="107.0" text="Nouveau type " />
+      <Label layoutX="51.0" layoutY="258.0" prefHeight="18.0" prefWidth="83.0" text="ID user" />
+      <TextField fx:id="txtidnvab" layoutX="263.0" layoutY="28.0" prefHeight="26.0" prefWidth="213.0" />
+      <TextField fx:id="txtidnvmon" layoutX="263.0" layoutY="64.0" prefHeight="26.0" prefWidth="214.0" />
+      <TextField fx:id="txtidnovdt" layoutX="263.0" layoutY="108.0" prefHeight="26.0" prefWidth="214.0" />
+      <TextField fx:id="txtidnovcod" layoutX="263.0" layoutY="154.0" prefHeight="26.0" prefWidth="214.0" />
+      <TextField fx:id="txtidnovtyp" layoutX="263.0" layoutY="197.0" prefHeight="26.0" prefWidth="214.0" />
+      <TextField fx:id="txtidumab" layoutX="265.0" layoutY="255.0" prefHeight="26.0" prefWidth="214.0" />
+      <Button layoutX="320.0" layoutY="338.0" mnemonicParsing="false" onAction="#modifierabonnement" text="Modifier" />
+   </children>
+</AnchorPane>
