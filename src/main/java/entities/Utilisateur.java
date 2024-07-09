@@ -1,74 +1,112 @@
 package entities;
 
-import java.util.Objects;
+import java.util.Date;
 
 public class Utilisateur {
+    private int idU;
+    private String nomU;
+    private String prenomU;
+    private String mdp;
+    private String mailU;
+    private long tel;
+    private boolean statut;
+    private Date dateNaissance;
+    private String Sexe;
 
+    public Utilisateur() {
+    }
 
-    private String nom;
-    private String prenom;
-    private int age;
-    private String email;
+    public Utilisateur(String nomU, String prenomU, String mailU, String sexe) {
+        this.nomU = nomU;
+        this.prenomU = prenomU;
+        this.mailU = mailU;
+        Sexe = sexe;
+    }
+
+    public Utilisateur(int idU, String nomU, String prenomU, String mailU, String sexe) {
+        this.idU = idU;
+        this.nomU = nomU;
+        this.prenomU = prenomU;
+        this.mailU = mailU;
+        Sexe = sexe;
+    }
+
+    public String getSexe() {
+        return Sexe;
+    }
+
+    public void setSexe(String sexe) {
+        Sexe = sexe;
+    }
+
+    // Getters and setters
+    public int getIdU() {
+        return idU;
+    }
+
+    public void setIdU(int idU) {
+        this.idU = idU;
+    }
+
+    public String getNomU() {
+        return nomU;
+    }
+
+    public void setNomU(String nomU) {
+        this.nomU = nomU;
+    }
+
+    public String getPrenomU() {
+        return prenomU;
+    }
+
+    public void setPrenomU(String prenomU) {
+        this.prenomU = prenomU;
+    }
+
+    public String getMdp() {
+        return mdp;
+    }
+
+    public void setMdp(String mdp) {
+        this.mdp = mdp;
+    }
+
+    public String getMailU() {
+        return mailU;
+    }
+
+    public void setMailU(String mailU) {
+        this.mailU = mailU;
+    }
+
+    public long getTel() {
+        return tel;
+    }
+
+    public void setTel(long tel) {
+        this.tel = tel;
+    }
+
+    public boolean isStatut() {
+        return statut;
+    }
+
+    public void setStatut(boolean statut) {
+        this.statut = statut;
+    }
+
+    public Date getDateNaissance() {
+        return dateNaissance;
+    }
+
+    public void setDateNaissance(Date dateNaissance) {
+        this.dateNaissance = dateNaissance;
+    }
 
     @Override
     public String toString() {
-        return "Utilisateur{" +
-                "nom='" + nom + '\'' +
-                ", prenom='" + prenom + '\'' +
-                ", age=" + age +
-                ", email='" + email + '\'' +
-                '}';
-    }
+        return ""+ idU ;
 
-    public Utilisateur(String nom, String prenom, int age, String email) {
-        this.nom = nom;
-        this.prenom = prenom;
-        this.age = age;
-        this.email = email;
-    }
-
-    public String getNom() {
-        return nom;
-    }
-
-    public void setNom(String nom) {
-        this.nom = nom;
-    }
-
-    public String getPrenom() {
-        return prenom;
-    }
-
-    public void setPrenom(String prenom) {
-        this.prenom = prenom;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Utilisateur that = (Utilisateur) o;
-        return age == that.age && Objects.equals(nom, that.nom) && Objects.equals(prenom, that.prenom) && Objects.equals(email, that.email);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(nom, prenom, age, email);
     }
 }

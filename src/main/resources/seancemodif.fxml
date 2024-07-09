@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #fffaed;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Seancemodif">
+   <children>
+      <ComboBox fx:id="nomid" layoutX="260.0" layoutY="112.0" prefHeight="26.0" prefWidth="208.0" />
+      <TextField fx:id="numsalleid" layoutX="261.0" layoutY="284.0" prefHeight="26.0" prefWidth="208.0" />
+      <Button fx:id="btnsupprimer" layoutX="373.0" layoutY="487.0" mnemonicParsing="false" onAction="#supprimerseance" style="-fx-background-color: db1f48;" text="Supprimer" textFill="WHITE" />
+      <Button fx:id="btnajouterseance" layoutX="205.0" layoutY="487.0" mnemonicParsing="false" onAction="#ajouterseance" style="-fx-background-color: db1f48;" text="Ajouter" textFill="WHITE" />
+      <Button fx:id="btnmodifierseance" layoutX="284.0" layoutY="487.0" mnemonicParsing="false" onAction="#modifierseance" style="-fx-background-color: db1f48;" text="Modifier" textFill="WHITE" />
+      <Text fill="#004369" layoutX="206.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jour" />
+      <Text fill="#004369" layoutX="204.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" />
+      <Text fill="#004369" layoutX="197.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fill="#004369" layoutX="202.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N°salle" wrappingWidth="55.19999999999999" />
+      <Text fill="#004369" layoutX="201.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duree" />
+      <Label layoutX="217.0" layoutY="43.0" prefHeight="40.0" prefWidth="98.0" text="Seance" textFill="#004369">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font></Label>
+      <Pane layoutX="477.0" layoutY="-1.0" prefHeight="514.0" prefWidth="534.0" style="-fx-background-color: #fffaed;">
+         <children>
+            <AnchorPane layoutX="2.0" layoutY="90.0" prefHeight="410.0" prefWidth="530.0" style="-fx-background-color: #38afb5;">
+               <children>
+                  <Label layoutX="14.0" text="Les Seances" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Label>
+                  <TableView id="tables_seances" fx:id="tableseance" layoutX="28.0" layoutY="89.0" prefHeight="200.0" prefWidth="473.0" style="-fx-background-color: #fffaed;">
+                    <columns>
+                      <TableColumn fx:id="nomseancetable" prefWidth="75.0" text="nom" />
+                      <TableColumn fx:id="coachseancetable" prefWidth="75.0" text="coach" />
+                        <TableColumn fx:id="jourseancetable" prefWidth="75.0" text="jourseance" />
+                        <TableColumn fx:id="numsalleseance" prefWidth="75.0" text="numesalle" />
+                        <TableColumn fx:id="dureeseancetable" prefWidth="75.0" text="duree" />
+                        <TableColumn fx:id="nbseancetable" prefWidth="95.199951171875" text="nb place" />
+                    </columns>
+                  </TableView>
+                  <TextField fx:id="chercherfield" layoutX="28.0" layoutY="352.0" promptText="chercher une seance" />
+                  <Button fx:id="btnchercher" layoutX="193.0" layoutY="351.0" mnemonicParsing="false" onAction="#chercherseance" prefHeight="26.0" prefWidth="71.0" style="-fx-background-color: db1f48;" text="Recherche" textFill="WHITE" />
+                  <ComboBox fx:id="combotri" layoutX="313.0" layoutY="352.0" onAction="#triseance" prefWidth="150.0" />
+                  <Button fx:id="btntrier" layoutX="476.0" layoutY="352.0" mnemonicParsing="false" onAction="#onbtntrier" prefHeight="26.0" prefWidth="47.0" style="-fx-background-color: db1f48;" text="Trier" textFill="WHITE" />
+                  <Button fx:id="btnrefraichir" layoutX="427.0" layoutY="46.0" mnemonicParsing="false" onAction="#refraichir" prefHeight="26.0" prefWidth="71.0" style="-fx-background-color: db1f48;" text="Refraichir" textFill="WHITE" />
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </AnchorPane>
+         </children></Pane>
+      <AnchorPane layoutX="-3.0" prefHeight="652.0" prefWidth="174.0" style="-fx-background-color: #004369;">
+         <children>
+            <Button fx:id="btntdb" layoutX="31.0" layoutY="135.0" mnemonicParsing="false" onAction="#tableaudebord" prefHeight="26.0" prefWidth="114.0" style="-fx-background-color: transparant;" text="Tableau de bord" textFill="WHITE" />
+            <Button fx:id="btnequipement" layoutX="27.0" layoutY="184.0" mnemonicParsing="false" onAction="#equipement" prefHeight="26.0" prefWidth="114.0" style="-fx-background-color: transparant;" text="Equipement" textFill="WHITE" />
+            <Button fx:id="btnabonnement" layoutX="29.0" layoutY="283.0" mnemonicParsing="false" onAction="#abonnement" prefHeight="26.0" prefWidth="114.0" style="-fx-background-color: transparant;" text="Abonnement" textFill="WHITE" />
+            <Button fx:id="btnalimentaire" layoutX="27.0" layoutY="339.0" mnemonicParsing="false" onAction="#alimentaire" prefHeight="26.0" prefWidth="114.0" style="-fx-background-color: transparant;" text="Alimentaire" textFill="WHITE" />
+            <Button fx:id="btnevenement" layoutX="30.0" layoutY="392.0" mnemonicParsing="false" onAction="#evenement" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: transparant;" text="Evenement" textFill="WHITE" />
+            <Button fx:id="btnreclamation" layoutX="33.0" layoutY="447.0" mnemonicParsing="false" onAction="#reclamation" prefHeight="26.0" prefWidth="101.0" style="-fx-background-color: transparant;" text="Reclamation" textFill="WHITE" />
+            <Button fx:id="btnplanning" layoutX="27.0" layoutY="233.0" mnemonicParsing="false" onAction="#planning" prefHeight="26.0" prefWidth="114.0" style="-fx-background-color: transparant;" text="Planning" textFill="#38afb5" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="196.0" layoutY="579.0" prefHeight="26.0" prefWidth="282.0" text="Consultez les statistiques des Seances">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnstats" layoutX="494.0" layoutY="577.0" mnemonicParsing="false" onAction="#btnstat" style="-fx-background-color: db1f48;" text="Statistiques" textFill="WHITE" />
+      <Button fx:id="btnreservation" layoutX="903.0" layoutY="577.0" mnemonicParsing="false" onAction="#reservation" style="-fx-background-color: db1f48;" text="reservations" textFill="WHITE" />
+      <Label layoutX="631.0" layoutY="577.0" text="Consultez la page des Reservations">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateid" layoutX="261.0" layoutY="154.0" prefHeight="26.0" prefWidth="202.0" />
+      <Spinner fx:id="dureeid" editable="true" layoutX="260.0" layoutY="196.0" prefHeight="26.0" prefWidth="208.0" />
+      <TextField fx:id="coachid" layoutX="260.0" layoutY="238.0" prefHeight="26.0" prefWidth="208.0" />
+      <Text fill="#004369" layoutX="200.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coach" wrappingWidth="55.19999999999999" />
+      <Text fill="#004369" layoutX="202.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nb place" wrappingWidth="55.19999999999999" />
+      <Spinner fx:id="nb_place_id" editable="true" layoutX="261.0" layoutY="326.0" prefHeight="26.0" prefWidth="202.0" />
+      <Label fx:id="notification" layoutX="182.0" layoutY="387.0" text="Label" visible="false" />
+   </children>
+</AnchorPane>
